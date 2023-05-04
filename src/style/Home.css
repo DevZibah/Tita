@@ -70,3 +70,128 @@ body {
   border: 1px dashed #155ed7;
   border-radius: 12px;
 }
+.vert-line {
+  border: 0.75px solid #7782ff;
+  transform: rotate(180deg);
+}
+.vert-line1 {
+  border: 0.75px solid #ff5196;
+  transform: rotate(180deg);
+}
+.vert-line2 {
+  border: 0.75px solid #ffb04e;
+  transform: rotate(180deg);
+}
+.div-one {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.8px;
+  line-height: 128.7%;
+}
+.MarSize {
+  color: #797979;
+}
+.color1 {
+  color: #155ed7;
+}
+.color2 {
+  color: #27caea;
+}
+.color3 {
+  color: #7782ff;
+}
+.ellipse3 {
+  width: 191px;
+  height: 120px;
+  left: calc(50% - 351px / 2 + 651.5px);
+  background: rgba(133, 207, 207, 0.8);
+  filter: blur(35px);
+  margin-left: 8rem;
+  transform: translate(3rem);
+}
+.arrow {
+  width: 70%;
+  margin-top: -4rem;
+}
+.text-three {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 129.7%;
+  color: #000000;
+}
+.yencoin {
+  width: 40% !important;
+}
+.mainn {
+  width: 55%;
+  margin: 0 auto;
+}
+.main-sec {
+  border: 1px solid #f3f3f3;
+  width: 50%;
+  height: 45px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+.inves {
+  background: #155ed7;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+}
+.start-up {
+  color: #155ed7;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.star-icon {
+  width: 30px;
+  height: 30px;
+}
+.grid-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.numb {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 129.7%;
+  color: #155ed7;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.divv-two {
+  border: 1px solid #ebf2f8;
+  background: #ebf2f8;
+  border-radius: 20px;
+}
+.texxt-two {
+  color: #263238;
+}
+.back-image {
+  width: 100%;
+}
+.textt-three {
+  margin-top: -6rem;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 129.7%;
+  text-transform: capitalize;
+}
+.small-text {
+  margin-top: -0.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129.7%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.build-buttn{
+  width: 160px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+}
