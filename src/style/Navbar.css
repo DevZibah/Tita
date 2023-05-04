@@ -1,11 +1,6 @@
 .ham-icon {
   /* border: 1px solid red; */
-  color: linear-gradient(
-    278.02deg,
-    #25f6ff -25.65%,
-    #7782ff 48.4%,
-    #155ed7 108.83%
-  ) !important;
+  color: hsla(217, 82%, 46%, 1);
   font-size: 1.6rem;
 }
 .navbar-toggler:focus,
@@ -17,4 +12,28 @@
 }
 .nav-togg {
   border: none;
+}
+.logo {
+  width: 22.75px;
+  height: 25.38px;
+}
+.titalogo {
+  width: 55px;
+  height: 19px;
+}
+.linkk {
+  text-decoration: none;
+  color: black;
+}
+.signup {
+  width: 120px;
+  height: 45px;
+  border: 1px solid #155ed7;
+  background: linear-gradient(
+    276.71deg,
+    #25f6ff -15.41%,
+    #7782ff 52.42%,
+    #155ed7 107.79%
+  );
+  border-radius: 89px;
 }

@@ -1,14 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../style/Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import logo from '../assets/logo.png'
+import tita from '../assets/tita.png'
 
 const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg p-2'>
       <div className='container-fluid'>
-        <a className='navbar-brand' href='#'>
-          TITA
-        </a>
+        <article className='d-flex'>
+          <img src={logo} alt='Logo' className='logo' />
+          <img src={tita} alt='Logo' className='titalogo ms-2 mt-1' />
+        </article>
         <button
           className='navbar-toggler nav-togg'
           type='button'
@@ -29,40 +33,40 @@ const Navbar = () => {
           id='navbarNav'
         >
           <ul className='navbar-nav'>
-            <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='#'>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk'>
                 Home
-              </a>
+              </Link>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk'>
                 About Us
-              </a>
+              </Link>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk'>
                 Market
-              </a>
+              </Link>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk'>
                 Resources
-              </a>
+              </Link>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk'>
                 FAQs
-              </a>
+              </Link>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk'>
                 Protocol Security
-              </a>
+              </Link>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                SignUp
-              </a>
+            <li className='nav-item p-3'>
+              <Link to='/SignUp' className='linkk p-2'>
+                <button className='signup'>Sign Up</button>
+              </Link>
             </li>
           </ul>
         </div>
