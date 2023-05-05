@@ -362,9 +362,13 @@ body {
     width: 15%;
   }
   .arrt-grid {
+    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 10px;
+  }
+  .grid-one {
+    transform: translate(6rem);
   }
   .textt-three {
     margin-top: -20rem;
@@ -378,7 +382,4 @@ body {
     width: 190px;
     height: 60px;
   }
-  /* .grid-one {
-    border: 1px solid orange;
-  } */
 }
