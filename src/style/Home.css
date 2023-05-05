@@ -135,15 +135,17 @@ body {
   background-color: #f3f3f3;
 }
 .inves {
-  background: #155ed7;
+  /* background: #155ed7; */
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  color: white;
+  cursor: pointer;
+  /* color: white; */
 }
 .start-up {
-  color: #155ed7;
+  /* color: #155ed7; */
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  cursor: pointer;
 }
 .star-icon {
   width: 30px;
@@ -362,7 +364,6 @@ body {
     width: 15%;
   }
   .arrt-grid {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 10px;

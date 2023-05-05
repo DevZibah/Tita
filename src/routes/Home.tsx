@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import coin from '../assets/coin.png'
 import coin1 from '../assets/coin1.png'
 import hero from '../assets/hero.png'
 import arrow from '../assets/arrow.png'
 import yen from '../assets/yen.jpg'
-import star from '../assets/star.png'
 import Background from '../assets/Background.png'
+import Investor from '../components/Investor'
+import StartUp from '../components/StartUp'
 
 const Home = () => {
+  const [key, setKey] = useState(true)
   return (
     <section className='mt-2'>
       <article className='ellipse'></article>
@@ -79,115 +81,31 @@ const Home = () => {
         </article>
       </section>
       <article className='text-center mt-3 p-md-4 sect-three'>
-        <h3 className='text-one'>How It Works</h3>
-        <main className='d-flex mt-3 mainn'>
-          <p className='main-sec mt-1 p-2 inves'>Investors</p>
-          <p className='main-sec mt-1 p-2 start-up'>Start-Ups</p>
-        </main>
-        <section className='mt-4 text-center'>
-          <article className='p-3 arrt-grid'>
-            <section className='grid-one'>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>One</p>
-                </div>
-                <p className='text-start texxt-two'>Sign up on our platform</p>
-              </div>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Two</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Complete your KYC and ID Verification
-                </p>
-              </div>
-            </section>
-            <section className='grid-one mt-3 mt-lg-0'>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Three</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Review our public funding Round
-                </p>
-              </div>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Four</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Pick the startup that interest you
-                </p>
-              </div>
-            </section>
-            <section className='grid-one mt-3 mt-lg-0'>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Five</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Indicate interest and get connected to the startup
-                </p>
-              </div>
-            </section>
-          </article>
-          <p className='text-one'>OR</p>
-          <article className='p-3 arrt-grid'>
-            <section className='grid-one'>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>One</p>
-                </div>
-                <p className='text-start texxt-two'>Sign up on our platform</p>
-              </div>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Two</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Click on the market button on the landing page
-                </p>
-              </div>
-            </section>
-            <section className='grid-one mt-3 mt-lg-0'>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Three</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Buy the TITA token and stake it for any given period of time
-                </p>
-              </div>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Four</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  Read through the contract.
-                </p>
-              </div>
-            </section>
-            <section className='grid-one mt-3 mt-lg-0'>
-              <div className='p-3 divv-two'>
-                <div className='d-flex'>
-                  <img src={star} className='star-icon' alt='star' />
-                  <p className='numb'>Five</p>
-                </div>
-                <p className='text-start texxt-two'>
-                  At the end of the given time, get your funds with APY
-                </p>
-              </div>
-            </section>
-          </article>
+        <section>
+          <h3 className='text-one'>How It Works</h3>
+          <main className='d-flex mt-3 mainn'>
+            <p
+              className='main-sec mt-1 p-2 inves'
+              onClick={() => setKey(true)}
+              style={{
+                background: key ? '#155ed7' : '#f3f3f3',
+                color: key ? 'white' : '#155ed7',
+              }}
+            >
+              Investors
+            </p>
+            <p
+              className='main-sec mt-1 p-2 start-up'
+              onClick={() => setKey(!true)}
+              style={{
+                background: key ? '#f3f3f3' : '#155ed7',
+                color: key ? '#155ed7' : 'white',
+              }}
+            >
+              Start-Ups
+            </p>
+          </main>
+          {key ? <Investor /> : <StartUp />}
         </section>
         <main className='mt-4 p-3'>
           <img src={Background} alt='background-image' className='back-image' />
