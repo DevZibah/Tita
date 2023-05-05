@@ -108,7 +108,7 @@ body {
   background: rgba(133, 207, 207, 0.8);
   filter: blur(35px);
   margin-left: 8rem;
-  transform: translate(3rem);
+  /* transform: translate(3rem); */
 }
 .arrow {
   width: 70%;

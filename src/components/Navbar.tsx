@@ -25,11 +25,7 @@ const Navbar = () => {
           <GiHamburgerMenu className='ham-icon' />
         </button>
         <div
-          className='collapse navbar-collapse collapse
-            navbar-collapse
-            text-center
-            d-md-flex
-            justify-content-end'
+          className='collapse navbar-collapse navv-ul'
           id='navbarNav'
         >
           <ul className='navbar-nav'>

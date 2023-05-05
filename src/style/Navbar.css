@@ -37,3 +37,10 @@
   );
   border-radius: 89px;
 }
+.navv-ul {
+  text-align: center;
+  justify-content: end;
+}
+@media (min-width: 768px) {
+  
+}
