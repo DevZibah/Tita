@@ -4,6 +4,7 @@ import LandingPageLayout from './layout/LandingPageLayout'
 import Home from './routes/Home'
 // import AboutUs from './routes/AboutUs'
 import './style/Home.css'
+import Market from './routes/Market'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/Market',
+        element: <Market />,
       },
       // {
       //   path: '/AboutUs',

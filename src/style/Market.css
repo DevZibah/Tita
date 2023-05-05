@@ -1,0 +1,92 @@
+.sec-market {
+  font-family: 'Ubuntu';
+  font-style: normal;
+}
+.con-wal,
+.mar-texxt {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 129.7%;
+  color: #155ed7;
+}
+.mar-texxt {
+  font-size: 18px;
+}
+.divv-mar {
+  border: 1px solid rgba(122, 161, 225, 0.65);
+  background: rgba(122, 161, 225, 0.65);
+  border-radius: 18px;
+}
+.grid-mark {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.market-textt {
+  font-weight: 500;
+  color: #155ed7;
+}
+.drop-buttn {
+  border: 1px solid #a9c2ec;
+  background: #a9c2ec;
+  border-radius: 10px;
+  color: white;
+}
+.cel-img {
+  width: 25px;
+  height: 25px;
+}
+.bloc-sec {
+  justify-content: space-around !important;
+}
+.bloc-arti {
+  border: 1px solid rgba(122, 161, 225, 0.65);
+  background: rgba(122, 161, 225, 0.65);
+  border-radius: 10px;
+}
+.bloc-main {
+  width: 40%;
+  height: 7rem;
+}
+.hor-mar {
+  color: white;
+}
+@media (min-width: 768px) {
+  .con-wal,
+  .mar-texxt {
+    font-size: 26px;
+  }
+  .market-textt,
+  .market-p,
+  .mar-pp {
+    font-size: 20px;
+  }
+  .drop-buttn {
+    border: 1px solid #a9c2ec;
+    width: 10rem;
+  }
+  .bloc-main {
+    width: 22% !important;
+    height: 8rem;
+  }
+  .mart-pp {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-market {
+    padding: 3rem !important;
+    margin-top: -2.6rem !important;
+  }
+  .grid-mark {
+    grid-gap: 20px;
+  }
+  .bloc-arti {
+    padding: 3rem !important;
+  }
+  .bloc-main {
+    width: 20% !important;
+    height: 11rem;
+  }
+}
