@@ -22,4 +22,20 @@
   color: #212326;
   margin-top: -15px;
 }
-
+@media (min-width: 768px) {
+  .arti-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .main-icons {
+    justify-content: end;
+  }
+}
+@media (min-width: 1024px) {
+  .foot-textt,
+  .main-icons,
+  .footter-text {
+    font-size: 18px !important;
+  }
+}

@@ -74,18 +74,18 @@ const Home = () => {
             </p>
           </div>
         </main>
-        <article className='text-end'>
+        <article className='text-end yen-div'>
           <img src={yen} className='yencoin text-end yen-coin' alt='coin yen' />
         </article>
       </section>
-      <article className='text-center mt-3 p-md-4 border border-danger'>
+      <article className='text-center mt-3 p-md-4 sect-three'>
         <h3 className='text-one'>How It Works</h3>
         <main className='d-flex mt-3 mainn'>
           <p className='main-sec mt-1 p-2 inves'>Investors</p>
           <p className='main-sec mt-1 p-2 start-up'>Start-Ups</p>
         </main>
         <section className='mt-4 text-center'>
-          <article className='p-3'>
+          <article className='p-3 arrt-grid'>
             <section className='grid-one'>
               <div className='p-3 divv-two'>
                 <div className='d-flex'>
@@ -104,7 +104,7 @@ const Home = () => {
                 </p>
               </div>
             </section>
-            <section className='grid-one mt-3'>
+            <section className='grid-one mt-3 mt-lg-0'>
               <div className='p-3 divv-two'>
                 <div className='d-flex'>
                   <img src={star} className='star-icon' alt='star' />
@@ -124,7 +124,7 @@ const Home = () => {
                 </p>
               </div>
             </section>
-            <section className='grid-one mt-3'>
+            <section className='grid-one mt-3 mt-lg-0'>
               <div className='p-3 divv-two'>
                 <div className='d-flex'>
                   <img src={star} className='star-icon' alt='star' />
@@ -137,7 +137,7 @@ const Home = () => {
             </section>
           </article>
           <p className='text-one'>OR</p>
-          <article className='p-3'>
+          <article className='p-3 arrt-grid'>
             <section className='grid-one'>
               <div className='p-3 divv-two'>
                 <div className='d-flex'>
@@ -156,7 +156,7 @@ const Home = () => {
                 </p>
               </div>
             </section>
-            <section className='grid-one mt-3'>
+            <section className='grid-one mt-3 mt-lg-0'>
               <div className='p-3 divv-two'>
                 <div className='d-flex'>
                   <img src={star} className='star-icon' alt='star' />
@@ -176,7 +176,7 @@ const Home = () => {
                 </p>
               </div>
             </section>
-            <section className='grid-one mt-3'>
+            <section className='grid-one mt-3 mt-lg-0'>
               <div className='p-3 divv-two'>
                 <div className='d-flex'>
                   <img src={star} className='star-icon' alt='star' />
@@ -197,7 +197,7 @@ const Home = () => {
           </h4>
           <h4 className='small-text'>Build with TITA </h4>
         </main>
-        <div className='mt-4'>
+        <div className='mt-4 mt-md-5'>
           <button className='buttn build-buttn'>Build With TITA</button>
         </div>
       </article>

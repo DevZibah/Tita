@@ -10,8 +10,8 @@ import { IoLogoYoutube } from 'react-icons/io'
 
 const Footer = () => {
   return (
-    <section className='mt-5 p-3 sec-four'>
-      <article>
+    <section className='mt-5 p-3 sec-four p-md-4'>
+      <article className='arti-one p-md-4'>
         <main>
           <article className='d-flex'>
             <img src={logo} alt='Logo' className='logo' />
@@ -24,7 +24,7 @@ const Footer = () => {
             </p>
           </div>
         </main>
-        <main className='d-flex'>
+        <main className='d-flex main-icons mt-md-5'>
           <p className='icon-text'>Follow Us:</p>
           <div>
             <RxInstagramLogo className='ms-2 iconns' />

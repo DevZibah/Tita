@@ -7,7 +7,7 @@ import tita from '../assets/tita.png'
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg p-2 mt-3'>
+    <nav className='navbar navbar-expand-lg p-2 mt-3 nav-header'>
       <div className='container-fluid'>
         <article className='d-flex'>
           <img src={logo} alt='Logo' className='logo' />

@@ -42,5 +42,15 @@
   justify-content: end;
 }
 @media (min-width: 1024px) {
-  
+  .nav-header {
+    padding: 3rem !important;
+    margin-top: -2rem !important;
+  }
+  .navv-ul {
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+  }
+  .signup {
+    margin-top: -1rem;
+  }
 }
