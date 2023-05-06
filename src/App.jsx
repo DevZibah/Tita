@@ -8,6 +8,8 @@ import Market from './routes/Market'
 import Dashboard from './routes/Dashboard'
 import InvestMarket from './routes/InvestMarket'
 import BorrowMarket from './routes/BorrowMarket'
+import About from './routes/About'
+import Faqs from './routes/Faqs'
 
 const router = createBrowserRouter([
   {
@@ -34,14 +36,14 @@ const router = createBrowserRouter([
         path: '/BorrowMarket',
         element: <BorrowMarket />,
       },
-      // {
-      //   path: '/AboutUs',
-      //   element: <AboutUs />,
-      // },
-      // {
-      //   path: '/FAQs',
-      //   element: <FAQs />,
-      // },
+      {
+        path: '/About',
+        element: <About />,
+      },
+      {
+        path: '/FAQs',
+        element: <Faqs />,
+      },
     ],
   },
 ])
