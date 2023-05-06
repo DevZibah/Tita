@@ -6,6 +6,8 @@ import Home from './routes/Home'
 import './style/Home.css'
 import Market from './routes/Market'
 import Dashboard from './routes/Dashboard'
+import InvestMarket from './routes/InvestMarket'
+import BorrowMarket from './routes/BorrowMarket'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: '/Dashboard',
         element: <Dashboard />,
+      },
+      {
+        path: '/InvestMarket',
+        element: <InvestMarket />,
+      },
+      {
+        path: '/BorrowMarket',
+        element: <BorrowMarket />,
       },
       // {
       //   path: '/AboutUs',

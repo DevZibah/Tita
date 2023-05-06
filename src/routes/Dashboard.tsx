@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../style/Dashboard.css'
 import safelock from '../assets/safelock.png'
+import Modal from '../components/Modal'
 
 const Dashboard = () => {
+  const [open, setOpen] = useState(false)
   return (
     <section className='p-4 mt-2 sec-market'>
       <header>
-        <h4 className='con-wal'>Dashboard</h4>
+        <h4 className='con-wal' onClick={() => setOpen(true)}>
+          Dashboard
+        </h4>
+        <Modal open={open} onClose={() => setOpen(false)} />
       </header>
       <main className='mt-4 p-3 bloc-arti'>
         <h5 className='mar-texxt'>My Accounts</h5>

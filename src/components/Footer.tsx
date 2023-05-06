@@ -10,7 +10,7 @@ import { IoLogoYoutube } from 'react-icons/io'
 
 const Footer = () => {
   return (
-    <section className='mt-5 p-3 sec-four p-md-4'>
+    <section className='mt-2 p-4 sec-four p-md-1'>
       <article className='arti-one p-md-4'>
         <main>
           <article className='d-flex'>

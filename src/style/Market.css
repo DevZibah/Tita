@@ -76,8 +76,8 @@
 }
 @media (min-width: 1024px) {
   .sec-market {
-    padding: 3rem !important;
-    margin-top: -2.6rem !important;
+    padding: 4rem !important;
+    margin-top: -3.5rem !important;
   }
   .grid-mark {
     grid-gap: 20px;

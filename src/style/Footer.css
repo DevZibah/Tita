@@ -38,4 +38,8 @@
   .footter-text {
     font-size: 18px !important;
   }
+  .sec-four {
+    padding: 3rem !important;
+    margin-top: -2rem !important;
+  }
 }

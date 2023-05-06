@@ -5,6 +5,45 @@
 .dash-numb {
   margin-top: -4px;
 }
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  width: 500px;
+  background-color: #fff;
+}
+.exit-icon {
+  color: #155ed7;
+  cursor: pointer;
+}
+.mod-text {
+  color: #155ed7;
+  font-weight: 400;
+}
+.mod-buttn {
+  width: 120px;
+  height: 33px;
+  border: 1px solid #155ed7;
+  background: linear-gradient(
+    276.71deg,
+    #25f6ff -15.41%,
+    #7782ff 52.42%,
+    #155ed7 107.79%
+  );
+  border-radius: 89px;
+  font-weight: 700;
+}
+.modal-sec {
+  justify-content: space-evenly;
+}
 @media (min-width: 768px) {
   .dash-numb {
     margin-top: 1px;
@@ -12,6 +51,17 @@
   .dash-sec {
     justify-content: space-between;
   }
+  .mod-text {
+    font-size: 18px;
+  }
+  .mod-buttn {
+    width: 135px;
+    height: 42px;
+  }
 }
 @media (min-width: 1024px) {
+  .mod-buttn {
+    width: 150px;
+    height: 42px;
+  }
 }
