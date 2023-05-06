@@ -44,6 +44,17 @@
 .modal-sec {
   justify-content: space-evenly;
 }
+.inves-sec {
+  font-size: 15px;
+}
+.inves-text {
+  font-size: 17px;
+  margin-top: -2px;
+  font-weight: 500;
+}
+.cel-textt {
+  font-weight: 600;
+}
 @media (min-width: 768px) {
   .dash-numb {
     margin-top: 1px;
@@ -63,5 +74,17 @@
   .mod-buttn {
     width: 150px;
     height: 42px;
+  }
+  .inves-sec {
+    font-size: 17px;
+  }
+  .inves-text {
+    font-size: 20px;
+    margin-top: -3.5px;
+    font-weight: 600;
+  }
+  .cel-textt {
+    font-size: 20px;
+    margin-top: -3.5px;
   }
 }
