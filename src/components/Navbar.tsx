@@ -35,7 +35,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item p-3'>
-              <Link to='/SignUp' className='linkk'>
+              <Link to='/AboutUs' className='linkk'>
                 About Us
               </Link>
             </li>
@@ -45,12 +45,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item p-3'>
-              <Link to='/SignUp' className='linkk'>
+              <Link to='/Resources' className='linkk'>
                 Resources
               </Link>
             </li>
             <li className='nav-item p-3'>
-              <Link to='/SignUp' className='linkk'>
+              <Link to='/FAQs' className='linkk'>
                 FAQs
               </Link>
             </li>
@@ -60,8 +60,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item p-3'>
-              <Link to='/SignUp' className='linkk p-2'>
-                <button className='signup'>Sign Up</button>
+              <Link to='/Dashboard' className='linkk p-2'>
+                <button className='signup'>Connect Wallet</button>
               </Link>
             </li>
           </ul>

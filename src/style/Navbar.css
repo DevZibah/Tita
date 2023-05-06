@@ -26,8 +26,8 @@
   color: black;
 }
 .signup {
-  width: 120px;
-  height: 45px;
+  width: 140px;
+  height: 47px;
   border: 1px solid #155ed7;
   background: linear-gradient(
     276.71deg,
@@ -36,6 +36,7 @@
     #155ed7 107.79%
   );
   border-radius: 89px;
+  font-weight: 500;
 }
 .navv-ul {
   text-align: center;

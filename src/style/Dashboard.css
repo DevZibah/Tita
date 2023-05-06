@@ -1,0 +1,17 @@
+.lock {
+  width: 25px;
+  height: 25px;
+}
+.dash-numb {
+  margin-top: -4px;
+}
+@media (min-width: 768px) {
+  .dash-numb {
+    margin-top: 1px;
+  }
+  .dash-sec {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+}

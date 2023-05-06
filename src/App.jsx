@@ -5,6 +5,7 @@ import Home from './routes/Home'
 // import AboutUs from './routes/AboutUs'
 import './style/Home.css'
 import Market from './routes/Market'
+import Dashboard from './routes/Dashboard'
 
 const router = createBrowserRouter([
   {
@@ -19,9 +20,17 @@ const router = createBrowserRouter([
         path: '/Market',
         element: <Market />,
       },
+      {
+        path: '/Dashboard',
+        element: <Dashboard />,
+      },
       // {
       //   path: '/AboutUs',
       //   element: <AboutUs />,
+      // },
+      // {
+      //   path: '/FAQs',
+      //   element: <FAQs />,
       // },
     ],
   },
