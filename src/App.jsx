@@ -10,6 +10,8 @@ import InvestMarket from './routes/InvestMarket'
 import BorrowMarket from './routes/BorrowMarket'
 import About from './routes/About'
 import Faqs from './routes/Faqs'
+import Resources from './routes/Resources'
+import Protocol from './routes/Protocol'
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: '/FAQs',
         element: <Faqs />,
+      },
+      {
+        path: '/Resources',
+        element: <Resources />,
+      },
+      {
+        path: '/Protocol',
+        element: <Protocol />,
       },
     ],
   },

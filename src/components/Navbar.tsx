@@ -128,7 +128,7 @@ const Navbar = () => {
             </li>
             <li className='nav-item p-3'>
               <Link
-                to='/SignUp'
+                to='/Protocol'
                 className='linkk'
                 onClick={() => (
                   setProtocol(true),
