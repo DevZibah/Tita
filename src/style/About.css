@@ -1,0 +1,25 @@
+.about_main-section {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.about_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 130px;
+  column-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 47px;
+}
+
+.about_grid > div {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 129.7%;
+  text-align: center;
+  text-transform: capitalize;
+}
