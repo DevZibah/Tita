@@ -1,0 +1,101 @@
+.faq-sect {
+  color: black;
+  width: 100%;
+  max-width: 1135px;
+  margin: 0 auto;
+  border: none !important;
+  font-family: "Ubuntu";
+  position: relative;
+}
+.faq-header_grp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+.faq-title {
+  font-size: 64px;
+  font-weight: 600;
+  color: #155ed7;
+}
+
+.faq-list_wrapper {
+  list-style-type: none;
+}
+
+.faq-list {
+  margin-bottom: 40px;
+}
+
+.faq-question {
+  font-size: 24px;
+  color: #155ed7;
+  font-weight: medium;
+  margin-left: 29px;
+}
+
+.faq-answer {
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.94px;
+}
+
+.q-sect {
+  display: flex;
+  align-items: start;
+}
+
+.faq-arrow_up {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.faq-question_sect {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.faq-answer_sect {
+  width: 90%;
+  margin: 23px auto 0px auto;
+}
+.faq-star_icon {
+  height: 40px;
+  width: 40px;
+}
+.faded-megaphone_1 {
+  opacity: 20%;
+  position: absolute;
+  left: -50px;
+  top: 300px;
+}
+.faded-megaphone_2 {
+  opacity: 20%;
+  position: absolute;
+  right: -80px;
+  bottom: 250px;
+}
+
+
+/* Faq-Bg */
+.faq-ellipses {
+    position: relative;
+}
+.ellipse-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ellipse-2 {
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+
+.ellipse-3 {
+    position: absolute;
+    right: 0;
+    bottom: -500px;
+}
