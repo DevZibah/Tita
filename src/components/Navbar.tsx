@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import '../style/Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import logo from '../assets/logo.png'
@@ -7,20 +7,7 @@ import tita from '../assets/tita.png'
 import { NavbarContext } from '../contexts/NavbarContext'
 
 const Navbar = () => {
-  const {
-    home,
-    about,
-    market,
-    resources,
-    faqs,
-    protocol,
-    setHome,
-    setAbout,
-    setMarket,
-    setResources,
-    setFaqs,
-    setProtocol,
-  } = useContext(NavbarContext)
+  const location = useLocation()
   return (
     <nav className='navbar navbar-expand-lg p-2 mt-3 nav-header'>
       <div className='container-fluid'>
@@ -45,15 +32,9 @@ const Navbar = () => {
               <Link
                 to='/'
                 className='linkk'
-                onClick={() => (
-                  setHome(true),
-                  setMarket(false),
-                  setAbout(false),
-                  setFaqs(false),
-                  setProtocol(false),
-                  setResources(false)
-                )}
-                style={{ color: home ? '#155ed7' : 'black' }}
+                style={{
+                  color: location.pathname === '/' ? '#155ed7' : 'black',
+                }}
               >
                 Home
               </Link>
@@ -62,15 +43,9 @@ const Navbar = () => {
               <Link
                 to='/About'
                 className='linkk'
-                onClick={() => (
-                  setAbout(true),
-                  setHome(false),
-                  setMarket(false),
-                  setFaqs(false),
-                  setProtocol(false),
-                  setResources(false)
-                )}
-                style={{ color: about ? '#155ed7' : 'black' }}
+                style={{
+                  color: location.pathname === '/About' ? '#155ed7' : 'black',
+                }}
               >
                 About Us
               </Link>
@@ -79,15 +54,9 @@ const Navbar = () => {
               <Link
                 to='/Market'
                 className='linkk'
-                onClick={() => (
-                  setMarket(true),
-                  setAbout(false),
-                  setHome(false),
-                  setFaqs(false),
-                  setProtocol(false),
-                  setResources(false)
-                )}
-                style={{ color: market ? '#155ed7' : 'black' }}
+                style={{
+                  color: location.pathname === '/Market' ? '#155ed7' : 'black',
+                }}
               >
                 Market
               </Link>
@@ -96,15 +65,10 @@ const Navbar = () => {
               <Link
                 to='/Resources'
                 className='linkk'
-                onClick={() => (
-                  setResources(true),
-                  setMarket(false),
-                  setAbout(false),
-                  setHome(false),
-                  setFaqs(false),
-                  setProtocol(false)
-                )}
-                style={{ color: resources ? '#155ed7' : 'black' }}
+                style={{
+                  color:
+                    location.pathname === '/Resources' ? '#155ed7' : 'black',
+                }}
               >
                 Resources
               </Link>
@@ -113,15 +77,9 @@ const Navbar = () => {
               <Link
                 to='/FAQs'
                 className='linkk'
-                onClick={() => (
-                  setFaqs(true),
-                  setResources(false),
-                  setMarket(false),
-                  setAbout(false),
-                  setHome(false),
-                  setProtocol(false)
-                )}
-                style={{ color: faqs ? '#155ed7' : 'black' }}
+                style={{
+                  color: location.pathname === '/FAQs' ? '#155ed7' : 'black',
+                }}
               >
                 FAQs
               </Link>
@@ -130,15 +88,10 @@ const Navbar = () => {
               <Link
                 to='/Protocol'
                 className='linkk'
-                onClick={() => (
-                  setProtocol(true),
-                  setFaqs(false),
-                  setResources(false),
-                  setMarket(false),
-                  setAbout(false),
-                  setHome(false)
-                )}
-                style={{ color: protocol ? '#155ed7' : 'black' }}
+                style={{
+                  color:
+                    location.pathname === '/Protocol' ? '#155ed7' : 'black',
+                }}
               >
                 Protocol Security
               </Link>
