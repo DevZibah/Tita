@@ -7,7 +7,7 @@ interface Props {
   children: ReactNode;
 }
 
-const FaqBg = ({ children }: Props): JSX.Element => {
+const ElipsesBg = ({ children }: Props): JSX.Element => {
   return (
     <section className="faq-ellipses">
       <img className="ellipse-1" src={ellipse} alt="ellipse" />
@@ -18,4 +18,4 @@ const FaqBg = ({ children }: Props): JSX.Element => {
   );
 };
 
-export default FaqBg;
+export default ElipsesBg;

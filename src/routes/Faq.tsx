@@ -5,7 +5,7 @@ import star from "../assets/svg/star-blue.svg";
 import arrow_up from "../assets/svg/arrow-up.svg";
 import arrow_down from "../assets/svg/arrow-down.svg";
 import megaphone from "../assets/svg/mic.svg";
-import FaqBg from "../components/FaqBg";
+import ElipsesBg from "../components/ElipsesBg";
 
 const Faq = () => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
@@ -15,7 +15,7 @@ const Faq = () => {
   };
 
   return (
-    <FaqBg>
+    <ElipsesBg>
       <section className="faq-sect">
         <header>
           <div className="faq-header_grp">
@@ -55,7 +55,7 @@ const Faq = () => {
           </ul>
         </main>
       </section>
-    </FaqBg>
+    </ElipsesBg>
   );
 };
 
