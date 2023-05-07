@@ -9,6 +9,8 @@ import Dashboard from './routes/Dashboard'
 import InvestMarket from './routes/InvestMarket'
 import BorrowMarket from './routes/BorrowMarket'
 import FAQs from './routes/Faq'
+import Resources from './routes/Resources'
+import Protocol from './routes/Protocol'
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
       {
         path: '/FAQs',
         element: <FAQs />,
+      },
+      {
+        path: '/Resources',
+        element: <Resources />,
+      },
+      {
+        path: '/Protocol',
+        element: <Protocol />,
       },
     ],
   },
