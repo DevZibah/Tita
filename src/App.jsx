@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         element: <BorrowMarket />,
       },
       {
-        path: '/AboutUs',
+        path: '/About',
         element: <AboutUs />,
       },
       {

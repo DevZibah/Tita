@@ -74,10 +74,10 @@
     margin-top: -5rem;
   }
   .main-resour {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-left: 7rem;
   }
   .art-resour,
   .art-resou {
