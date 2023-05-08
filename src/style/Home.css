@@ -368,6 +368,7 @@ body {
     grid-gap: 10px;
   }
   .grid-one {
+    /* border: 1px solid red; */
     transform: translate(6rem);
   }
   .textt-three {
