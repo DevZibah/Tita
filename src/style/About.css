@@ -1,13 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+
 .about_main-section {
   max-width: 1100px;
   width: 100%;
   margin: auto;
 }
+.about_main-section > h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #155ED7;
+    line-height: 129.7%;
+    text-align: center;
+    text-transform: capitalize;
+    width: 80%;
+    margin: auto;
+}
 
 .about_grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  row-gap: 130px;
   column-gap: 50px;
   align-items: center;
   justify-content: center;
@@ -15,11 +26,31 @@
 }
 
 .about_grid > div {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 129.7%;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 129.7%;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 100px;
+}
+
+.about_grid > div > h5 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #155ed7;
+  margin-bottom: 16px;
+}
+.about_grid > div > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+.about_grid > div > p {
+    font-weight: 500;
+font-size: 24px;
+line-height: 129.7%;
+/* or 31px */
+
+text-align: center;
+text-transform: capitalize;
 }

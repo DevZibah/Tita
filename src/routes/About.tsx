@@ -3,12 +3,17 @@ import "../style/About.css";
 import believeIllustration from "../assets/svg/believe_img.svg";
 import challengesIllustration from "../assets/svg/challenges_img.svg";
 import solutionIllustration from "../assets/svg/solution_img.svg";
+import hero from "../assets/svg/about-hero.svg";
 import ElipsesBg from "../components/ElipsesBg";
 
 const About = () => {
   return (
     <section>
-      <header></header>
+      <header>
+        <div>
+          {/* <img src={hero} alt="hero-img" /> */}
+        </div>
+      </header>
       <ElipsesBg>
         <main className="about_main-section">
           <h3>
@@ -59,6 +64,24 @@ const About = () => {
               <img src={solutionIllustration} alt="" />
             </article>
           </div>
+          <article className="">
+            <div>
+              <h5>THE VISION</h5>
+              <p>
+                We're proud to say that TITA is not just a lending platform, but
+                a community of like-minded individuals who share the same vision
+                of creating a world where everyone has an equal chance to
+                succeed. By connecting startups and female entrepreneurs with
+                investors, we're building a network that drives innovation and
+                growth.
+                <br />
+                <br />
+                Join us on this journey to revolutionize the world of lending
+                and finance. Together, we can make a difference and create a
+                brighter future for all.
+              </p>
+            </div>
+          </article>
         </main>
       </ElipsesBg>
     </section>
