@@ -12,6 +12,7 @@ import FAQs from './routes/Faq'
 import Resources from './routes/Resources'
 import Protocol from './routes/Protocol'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -56,5 +57,6 @@ const router = createBrowserRouter([
     ],
   },
 ])
+
 
 export const App = () => <RouterProvider router={router} />
