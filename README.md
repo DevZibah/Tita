@@ -8,7 +8,7 @@ With TITA platform,
 
 
 
-TITA Features
+## TITA Features
 - User Reigtration,.
 - Membership.
 - Lending Simulator.
@@ -16,6 +16,27 @@ TITA Features
 - Investor opportunities for funding.
 - REFER TITA bonus points.
 - Terms & Conditions.
+ 
+## TITA Workflow
 
-TITA Workflow
-- User create a profile 
+User create a profile
+An investor or lender must register on the platform.
+An wallet account will be created automatically for the user with a notification,
+User can fund their account with any type of token
+User can use a simulator to calculate eligibility based on information provided.
+User will be notify of their loan request status if it meets expected criteria.
+
+## Tools/Technology
+
+TITA is built on CELE Blockchain Technology using Smart Contract
+React.JS -web enabled programming language,
+Cascading Style Sheet for Web./Color styling.
+Figma: Figma is an online user interface (UI) tool for designing, collaborating, and prototyping.
+
+## TITA Links
+
+## TITA Procedure for Installation/Deployment.
+
+## TITA Hardware/System Specifications
+
+## TEAM TECH TITANS
