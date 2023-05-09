@@ -39,7 +39,8 @@
 .bloc-sec {
   justify-content: space-around !important;
 }
-.bloc-arti {
+.bloc-arti,
+.art-three {
   border: 1px solid rgba(122, 161, 225, 0.65);
   background: rgba(122, 161, 225, 0.65);
   border-radius: 10px;
@@ -50,6 +51,13 @@
 }
 .hor-mar {
   color: white;
+}
+.art-three h4,
+.name-icon {
+  font-weight: 700;
+}
+.art-three p {
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .con-wal,
@@ -72,6 +80,11 @@
   .mart-pp {
     text-align: center;
     font-size: 18px;
+  }
+  .main-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
 }
 @media (min-width: 1024px) {
