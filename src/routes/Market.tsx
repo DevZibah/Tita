@@ -1,6 +1,12 @@
 import React from 'react'
 import '../style/Market.css'
-import Frame from '../assets/Frame.png'
+import bnb from '../assets/bnb.png'
+import usdt from '../assets/usdt.png'
+import tia from '../assets/tia.png'
+import celo from '../assets/celo.png'
+import { HiOutlineCubeTransparent } from 'react-icons/hi'
+import { MdOutlineAllInclusive } from 'react-icons/md'
+import { MdOutlineToken } from 'react-icons/md'
 
 const Market = () => {
   return (
@@ -69,8 +75,8 @@ const Market = () => {
         <section className='mt-4'>
           <main>
             <div className='d-flex'>
-              <img className='cel-img' src={Frame} alt='Frame' />
-              <p className='text-uppercase ms-2'>Celo</p>
+              <img className='cel-img' src={celo} alt='celo' />
+              <p className='text-uppercase ms-2 name-icon'>Celo</p>
             </div>
             <article className='p-3 bloc-arti'>
               <section className='d-flex bloc-sec'>
@@ -112,8 +118,8 @@ const Market = () => {
           </main>
           <main className='mt-4'>
             <div className='d-flex'>
-              <img className='cel-img' src={Frame} alt='Frame' />
-              <p className='text-uppercase ms-2'>tia</p>
+              <img className='cel-img' src={tia} alt='tia' />
+              <p className='text-uppercase ms-2 name-icon'>tia</p>
             </div>
             <article className='p-3 bloc-arti'>
               <section className='d-flex bloc-sec'>
@@ -155,8 +161,8 @@ const Market = () => {
           </main>
           <main className='mt-4'>
             <div className='d-flex'>
-              <img className='cel-img' src={Frame} alt='Frame' />
-              <p className='text-uppercase ms-2'>usdt</p>
+              <img className='cel-img' src={usdt} alt='usdt' />
+              <p className='text-uppercase ms-2 name-icon'>usdt</p>
             </div>
             <article className='p-3 bloc-arti'>
               <section className='d-flex bloc-sec'>
@@ -198,8 +204,8 @@ const Market = () => {
           </main>
           <main className='mt-4'>
             <div className='d-flex'>
-              <img className='cel-img' src={Frame} alt='Frame' />
-              <p className='text-uppercase ms-2'>bnb</p>
+              <img className='cel-img' src={bnb} alt='bnb' />
+              <p className='text-uppercase ms-2 name-icon'>bnb</p>
             </div>
             <article className='p-3 bloc-arti'>
               <section className='d-flex bloc-sec'>
@@ -241,6 +247,33 @@ const Market = () => {
           </main>
         </section>
       </article>
+      <main className='mt-5 main-three'>
+        <article className='p-4 art-three'>
+          <HiOutlineCubeTransparent className='cel-img' />
+          <h4 className='mt-3'>Transparent</h4>
+          <p>
+            Our decentralized micro-lending platform uses blockchain technology
+            to provide transparency in the lending process.
+          </p>
+        </article>
+        <article className='p-4 mt-3 art-three mt-md-0'>
+          <MdOutlineAllInclusive className='cel-img' />
+          <h4 className='mt-3'>Inclusive</h4>
+          <p>
+            Our decentralized micro-lending platform can provide access to
+            credit to undeserved communities that may not have access to
+            traditional banking systems.
+          </p>
+        </article>
+        <article className='p-4 mt-3 art-three mt-md-0'>
+          <MdOutlineToken className='cel-img' />
+          <h4 className='mt-3'>Tokenized</h4>
+          <p>
+            TITA represents an asset or security as a digital token on a
+            blockchain.
+          </p>
+        </article>
+      </main>
     </section>
   )
 }
