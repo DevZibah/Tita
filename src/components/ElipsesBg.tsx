@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import ellipse from "../assets/svg/ellipse-blue.svg";
 import ellipse_2 from "../assets/svg/ellipse-2-blue.svg";
 import ellipse_3 from "../assets/svg/ellipse-3-blue.svg";
+import "../style/Faq.css"
 
 interface Props {
   children: ReactNode;
