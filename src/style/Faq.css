@@ -69,12 +69,14 @@
   position: absolute;
   left: -50px;
   top: 300px;
+  z-index: -2;
 }
 .faded-megaphone_2 {
   opacity: 20%;
   position: absolute;
   right: -80px;
   bottom: 250px;
+  z-index: -2;
 }
 
 /* Faq-Bg */
@@ -98,13 +100,17 @@
 }
 
 .ellipse-3 {
+  display: block;
   position: absolute;
   z-index: -2;
   right: 0;
   bottom: -500px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .faq-sect {
+    width: 90%;
+  }
   .faq-ellipses {
     overflow-x: hidden;
   }
@@ -112,6 +118,10 @@
     font-size: 20px;
     margin-left: 16px;
   }
+  .faq-title {
+    font-size: 50px;
+  }
+  
 
   .faq-answer {
     font-size: 18px;
@@ -136,5 +146,15 @@
   .faq-arrow_up {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-title {
+    font-size: 45px;
+  }
+
+  .ellipse-3 {
+    display: none;
   }
 }
