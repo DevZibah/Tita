@@ -1,6 +1,6 @@
 # TITA 
 
-TITA is a decentralised micro-lending platform that was developed to help startups, investors, and individuals interested in getting a soft loan using Blockchaint Technology.
+TITA is a decentralised micro-lending platform that was developed to help startups, investors, and individuals interested in getting a soft loan using Blockchain Technology.
 
 TITA platform will enable entrepreneurs and startups in building their business success with just a minute of interest.
 
@@ -51,15 +51,15 @@ cd into project folder.
 -cd Frontend,
 Use yarn or npm to install packages,
 npm install,
-yarn.
+yarn install.
 
 -Start the application,
-yarn start.
-
-Note: An env file should be created to store your environment variables.
+npm run dev 
+or
+yarn run dev.
 
 ## Want to contribute to TITA Platform?
--Pull requests are the best way to propose changes to the codebase. Would you like to add/remove anything to make Recycler better? Follow these steps:
+-Pull requests are the best way to propose changes to the codebase. Would you like to add/remove anything to make TITA better? Follow these steps:
 -Fork the repository and make a branch off of main.
 -Changes should be made and a pull request should be opened.
 -Alternatively, you can open a issue and we will respond as soon as possible.
