@@ -64,10 +64,10 @@ Note: An env file should be created to store your environment variables.
 -Changes should be made and a pull request should be opened.
 -Alternatively, you can open a issue and we will respond as soon as possible.
 
-
 ## TITA Hardware/System Specifications
 
 
 
 ## TEAM TECH TITANS
+![image](https://github.com/DevZibah/Tita/assets/51999499/6f815edc-cfb6-4bfb-b3c4-ad3a86010d8c)
 
