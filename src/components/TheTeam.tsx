@@ -8,15 +8,15 @@ const TheTeam = () => {
       <h3 className="stellar_text">MEET THE TEAM</h3>
       <ul className="d_team_grid">
         {teamMembers.map((member: ITeamMember, idx) => (
-          <li key={idx}>
+          <li key={idx} className="member_info">
+            <div className="member_photo_wrapper">
             <img className="member_photo" src={member.photo} alt="photo" />
-            <div>
+            </div>
+            <div className="member_content_wrapper">
               <p className="member_name">{member.name}</p>
-              <ul>
                 {member.positions.map((position) => (
-                  <li className="member_position">{position}</li>
+                  <p className="member_position">{position}</p>
                 ))}
-              </ul>
             </div>
           </li>
         ))}
