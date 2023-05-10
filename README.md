@@ -1,12 +1,10 @@
 # TITA 
 
-TITA is a decentralised micro-lending platform which was developed with goals of helping startups, investors, and individual interested in getting a soft loan using Blockchaint Technology. TITA platform will enable female entrepreneur in building their business success with just a minute interest.
+TITA is a decentralised micro-lending platform that was developed to help startups, investors, and individuals interested in getting a soft loan using Blockchaint Technology.
 
-TITA Micro-lending plsatform is a secured, transparent, transparent, seamless platform on highly effective and industry standards Blockchain Technology. The platform uses this Blockchain Technology to connect borrowers and lenders together, the purpose it to ease fears from the lender as well as the borrowers.
+TITA platform will enable entrepreneurs and startups in building their business success with just a minute interest.
 
-With TITA platform,  
-
-
+TITA Micro-lending plsatform is a secured, transparent, transparent, inclusive, tokenized platform built on highly effective and industry standards Blockchain Technology. The platform uses this Blockchain Technology to connect borrowers and lenders together with the purpose to ease fears of the lender as well as the borrowers.
 
 ## TITA Features
 - User Reigtration,.
@@ -18,6 +16,14 @@ With TITA platform,
 - Terms & Conditions.
  
 ## TITA Workflow
+
+-User create a profile on TITA platform
+An investor or lender must register on the platform.
+-User create a profile.
+-User create a profile.
+-User create a profile.
+
+
 
 User create a profile
 An investor or lender must register on the platform.
