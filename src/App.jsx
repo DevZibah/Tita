@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
+// import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { RouterProvider } from 'react-router'
 import LandingPageLayout from './layout/LandingPageLayout'
 import Home from './routes/Home'
@@ -11,7 +12,6 @@ import BorrowMarket from './routes/BorrowMarket'
 import FAQs from './routes/Faq'
 import Resources from './routes/Resources'
 import Protocol from './routes/Protocol'
-
 
 const router = createBrowserRouter([
   {
@@ -58,5 +58,11 @@ const router = createBrowserRouter([
   },
 ])
 
-
-export const App = () => <RouterProvider router={router} />
+export const App = () => {
+  return (
+    <>
+      <RouterProvider router={router} />
+      {/* <ConnectButton /> */}
+    </>
+  )
+}

@@ -25,7 +25,10 @@
   text-decoration: none;
   color: black;
 }
-.signup {
+.connect-wallet {
+  margin: 0 auto;
+}
+/* .signup {
   width: 140px;
   height: 47px;
   border: 1px solid #155ed7;
@@ -37,7 +40,7 @@
   );
   border-radius: 89px;
   font-weight: 500;
-}
+} */
 .navv-ul {
   text-align: center;
   justify-content: end;
@@ -48,10 +51,12 @@
     margin-top: -2rem !important;
   }
   .navv-ul {
-    /* border: 1px solid red; */
     margin-top: 1rem;
   }
-  .signup {
+  /* .signup {
     margin-top: -1rem;
+  } */
+  .connect-wallet {
+    margin-top: -8px;
   }
 }
