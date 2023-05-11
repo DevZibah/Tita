@@ -7,10 +7,11 @@ TITA platform will enable entrepreneurs and startups in building their business 
 TITA Micro-lending plsatform is a secured, transparent, transparent, inclusive, tokenized platform built on highly effective and industry standards Blockchain Technology. The platform uses this Blockchain Technology to connect borrowers and lenders together with the purpose to ease fears of the lender as well as the borrowers.
 
 ## TITA Features
-- User Reigtration,.
+- User Registration.
 - Membership.
 - Lending Simulator.
-- Lending rules, collateral provision.
+- Lending rules.
+- collateral provision.
 - Investor opportunities for funding.
 - REFER TITA bonus points.
 - Terms & Conditions.
@@ -59,13 +60,12 @@ or
 yarn run dev.
 
 ## Want to contribute to TITA Platform?
+
+
 -Pull requests are the best way to propose changes to the codebase. Would you like to add/remove anything to make TITA better? Follow these steps:
 -Fork the repository and make a branch off of main.
 -Changes should be made and a pull request should be opened.
 -Alternatively, you can open a issue and we will respond as soon as possible.
-
-## TITA Hardware/System Specifications
-
 
 
 ## TEAM TECH TITANS
