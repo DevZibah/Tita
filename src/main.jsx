@@ -5,42 +5,38 @@ import './index.css'
 import NavbarContextProvider from './contexts/NavbarContext'
 
 import '@rainbow-me/rainbowkit/styles.css'
-// import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit'
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-import { WagmiConfig, createConfig, configureChains, mainnet } from 'wagmi'
-import { publicProvider } from 'wagmi/providers/public'
-import { polygon } from 'wagmi/chains'
-import { infuraProvider } from 'wagmi/providers/infura'
-// import { usePublicClient } from 'wagmi'
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit'
+import { configureChains, createClient, WagmiConfig } from 'wagmi'
+import { celoAlfajores, celo } from 'wagmi/chains'
+import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
-// const publicClient = usePublicClient()
-
-const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet, polygon],
+const { chains, provider } = configureChains(
+  [celoAlfajores, celo],
   [
-    infuraProvider({
-      apiKey: 'e40f343258fd4527b4be8e58a49b8964',
-      stallTimeout: 1_000,
+    jsonRpcProvider({
+      rpc: (chain) => ({
+        http: 'https://celo-alfajores.infura.io/v3/e40f343258fd4527b4be8e58a49b8964',
+      }),
     }),
-    publicProvider(),
   ]
 )
 
-const config = createConfig({
-  autoConnect: true,
-  publicClient,
-  webSocketPublicClient,
+const { connectors } = getDefaultWallets({
+  appName: 'TITA',
+  projectId: 'projectId',
+  chains,
 })
 
-// const { connectors } = getDefaultWallets({
-//   appName: 'My Celo App',
-//   projectId: 'YOUR_PROJECT_ID',
-//   chains,
-// })
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors,
+  provider,
+})
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <WagmiConfig config={config}>
+    <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <NavbarContextProvider>
           <App />

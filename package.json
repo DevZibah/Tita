@@ -16,15 +16,15 @@
     "@celo/contractkit": "^4.1.0",
     "@celo/rainbowkit-celo": "^0.11.2",
     "@celo/react-celo": "^5.0.3",
-    "@rainbow-me/rainbowkit": "^1.0.0",
+    "@rainbow-me/rainbowkit": "^0.12.14",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router": "^6.11.0",
     "react-router-dom": "^6.11.0",
-    "viem": "^0.3.19",
-    "wagmi": "^1.0.1",
+    "viem": "^0.3.20",
+    "wagmi": "^0.12.13",
     "web3": "^1.9.0"
   },
   "devDependencies": {
