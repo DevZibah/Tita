@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { Link, useLocation } from 'react-router-dom'
 import '../style/Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -96,10 +97,11 @@ const Navbar = () => {
                 Protocol Security
               </Link>
             </li>
-            <li className='nav-item p-3'>
-              <Link to='/Dashboard' className='linkk p-2'>
-                <button className='signup'>Connect Wallet</button>
-              </Link>
+            <li className='nav-item p-3 connect-wallet'>
+              {/* <Link to='/Dashboard' className='linkk p-2'> */}
+              <ConnectButton />
+              {/* <button className='signup'>Connect Wallet</button> */}
+              {/* </Link> */}
             </li>
           </ul>
         </div>
