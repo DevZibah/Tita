@@ -111,9 +111,7 @@
   .faq-sect {
     width: 90%;
   }
-  .faq-ellipses {
-    overflow-x: hidden;
-  }
+
   .faq-question {
     font-size: 20px;
     margin-left: 16px;
@@ -150,6 +148,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .faq-ellipses {
+    overflow-x: hidden;
+  }
   .faq-title {
     font-size: 45px;
   }

@@ -81,7 +81,12 @@
   color: #000000;
 }
 
-
+@media screen and (max-width: 1024px) {
+  .about_main-section {
+    width: 90%;
+    margin: auto;
+}
+}
 
 
 @media screen and (max-width: 900px) {

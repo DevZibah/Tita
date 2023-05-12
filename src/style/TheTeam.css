@@ -5,9 +5,22 @@
 
 .d_team_grid {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  gap: 75px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
   list-style-type: none;
+}
+.d_team_grid .member_info:nth-of-type(1), .member_info:nth-of-type(2), .member_info:nth-of-type(3) {
+  grid-column: span 4 / span 12;
+}
+.d_team_grid .member_info:nth-of-type(4), .member_info:nth-of-type(5), .member_info:nth-of-type(6), .member_info:nth-of-type(7) {
+  grid-column: span 3 / span 12;
+}
+
+.member_photo_wrapper {
+  width: 200px;
+  height: 100%;
 }
 
 .stellar_text {
@@ -20,38 +33,80 @@
   margin-bottom: 60px;
 }
 .member_photo {
-  width: 241px;
-  height: 226px;
-  border: 1px dash #155ed7;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #155ed7;
+  border-radius: 50%;
 }
 .member_name {
   font-weight: bold;
   text-align: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
+  font-size: 16px !important;
+  white-space: pre-wrap;
+}
+.member_position {
+  font-size: 14px !important;
+}
+.member_info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.member_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 155px;
+  background: #155ed7;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-bottom: -95px;
+  padding: 16px;
 }
 
 @media screen and (max-width: 1024px) {
+  .member_content_wrapper {
+    margin-left: -15px;
+  }
   .d_team_wrapper {
-    width: 100%;
-    margin: 40px 24px;
+    width: 95%;
+    margin: 40px auto;
   }
   .d_team_grid {
-  grid-template-columns: 30% 30% 30%;
-  gap: 40px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 768px) {
+  .d_team_wrapper {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .member_photo_wrapper {
+    width: 200px;
+    height: 100%;
+  }
+  
+  .member_content_wrapper {
+    margin-left: -40px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .member_info {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
   .d_team_grid {
-  grid-template-columns: 40% 40%;
-  gap: 20px;
-}
-.member_photo {
-  width: 150px;
-  height: 150px;
-  border: 1px dash #155ed7;
-}
-.d_team_wrapper {
-  width: 100%;
-  margin: 40px 16px;
-}
+    display: block;
+  }
 }
