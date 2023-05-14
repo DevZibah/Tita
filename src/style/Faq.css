@@ -107,6 +107,10 @@
   bottom: -500px;
 }
 
+ul {
+  padding-left: 0px !important;
+}
+
 @media screen and (max-width: 1024px) {
   .faq-sect {
     width: 90%;
@@ -145,6 +149,9 @@
     width: 30px;
     height: 30px;
   }
+  .faq-header_grp > img {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -152,10 +159,21 @@
     overflow-x: hidden;
   }
   .faq-title {
-    font-size: 45px;
+    font-size: 22px;
+    text-align: left !important;
   }
 
   .ellipse-3 {
     display: none;
+  }
+
+  .faq-header_grp {
+    justify-content: start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .faq-header_grp > img {
+    width: 60px;
   }
 }
