@@ -10,6 +10,7 @@
   justify-content: center;
   gap: 50px;
   list-style-type: none;
+  margin: 16px;
 }
 .d_team_grid .member_info:nth-of-type(1), .member_info:nth-of-type(2), .member_info:nth-of-type(3) {
   grid-column: span 4 / span 12;
