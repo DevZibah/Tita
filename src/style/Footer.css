@@ -7,6 +7,14 @@
 }
 .iconns {
   color: #d2d2d2;
+  cursor: pointer;
+}
+.iconns:hover {
+  transform: scaleX(1);
+  translate: 0.5s;
+  border: 2px solid #155ed7;
+  padding: 2px;
+  border-radius: 4px;
 }
 .linee {
   border: 0.858965px solid #155ed7;
@@ -29,7 +37,7 @@
     grid-gap: 10px;
   }
   .main-icons {
-    justify-content: end;
+    justify-content: center;
   }
 }
 @media (min-width: 1024px) {

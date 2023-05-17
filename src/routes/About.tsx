@@ -96,9 +96,9 @@ const About = () => {
               </p>
             </div>
           </article>
+        <TheTeam/>
         </main>
 
-        <TheTeam/>
       </ElipsesBg>
     </section>
   );

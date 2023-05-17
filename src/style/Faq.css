@@ -81,14 +81,14 @@
 
 /* Faq-Bg */
 .faq-ellipses {
-  position: relative;
+  /* position: relative; */
   overflow-x: inherit;
 }
 .ellipse-1 {
   position: absolute;
   z-index: -2;
   left: 0;
-  top: 0;
+  top: 200px;
 }
 
 .ellipse-2 {
@@ -104,7 +104,7 @@
   position: absolute;
   z-index: -2;
   right: 0;
-  bottom: -500px;
+  top: 800px;
 }
 
 ul {
