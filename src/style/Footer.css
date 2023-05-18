@@ -2,12 +2,14 @@
   color: #3c2b4a !important;
   font-size: 14px !important;
 }
-.icon-text {
+.icon-text,
+.iconns {
   color: #212326;
 }
 .iconns {
-  color: #d2d2d2;
+  margin-top: -1px;
   cursor: pointer;
+  font-size: 18px;
 }
 .iconns:hover {
   transform: scaleX(1);
@@ -15,6 +17,7 @@
   border: 2px solid #155ed7;
   padding: 2px;
   border-radius: 4px;
+  color: #155ed7;
 }
 .linee {
   border: 0.858965px solid #155ed7;
@@ -29,6 +32,9 @@
   line-height: 196.5%;
   color: #212326;
   margin-top: -15px;
+}
+.main-icons {
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .arti-one {
@@ -49,5 +55,9 @@
   .sec-four {
     padding: 3rem !important;
     margin-top: -2rem !important;
+  }
+  .iconns {
+    margin-top: -2px;
+    font-size: 21px;
   }
 }

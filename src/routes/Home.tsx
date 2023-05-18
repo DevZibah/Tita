@@ -43,7 +43,7 @@ const Home = () => {
           </article>
           <small className='vert-line me-2 ms-md-3'></small>
           <article className='color1'>
-            <h4>$2.3B+</h4>
+            <h4>$0.00</h4>
             <small>Funds Invested</small>
           </article>
           <small className='vert-line1 me-2 ms-md-3'></small>
@@ -53,7 +53,7 @@ const Home = () => {
           </article>
           <small className='vert-line2 me-2 ms-md-3'></small>
           <article className='color3'>
-            <h4>$2.3B+</h4>
+            <h4>$0.00</h4>
             <small>Total Liquidity</small>
           </article>
         </section>
