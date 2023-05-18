@@ -16,12 +16,20 @@ TITA which is coined from the following words; T[Transparent], I[Inclusive], T[T
 - Terms & Conditions
  
 ## TITA Workflow
-- User create a profile on TITA platform.
-- An investor or lender must register on the platform.
-- An wallet account will be created automatically for the user with a notification.
-- User can fund their account with CELO token.
-- User can use a simulator to calculate eligibility based on information provided.
-- User will be notify of their loan request status if it meets expected criteria.
+### For Investors
+- Click the "Connect Wallet" Button on the Homepage to connect your Wallet.
+- Click the "Invest/Borrow button at the top right corner of your dashboard to visit the market.
+- From the Investment Market, select any token you wish to invest in.
+- Connect your wallet and approve the contract.
+- Watch your money increase daily while helping startups and entrepreneurs achieve their business goals.
+
+### For Borrowers
+- Click the "Connect Wallet" button on the homepage to connect your Wallet.
+- Cclick the "Invest/borrow" button at the top right corner of your dashboard to visit the market.
+- From the Borrowers Market, select any token you wish to borrow.
+- Submit your proposal and another relevant document that can help influence investors' decisions positively.
+- Wait patiently for investors to review and confirm your proposal within 3-7 working days.
+
 
 ## TITA Tools/Technology
 
