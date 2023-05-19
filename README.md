@@ -39,6 +39,14 @@ TITA which is coined from the following words; T[Transparent], I[Inclusive], T[T
 - Cascading Style Sheet (CSS):-CSS is a language used to style web pages. The components were styled using this technology.
 - Figma:-Figma is an online user interface (UI) tool for designing, collaborating, and prototyping.
 
+## TITA Technical Immplementation
+
+- TITA platform was built using Remix as IDE for easy Development and Prototype.
+- Solidity version 0.8.0
+- The Smart Contract was deployed on Alfajores
+- Here's the link to the contract https://alfajores.celoscan.io/address/0xb4f21c2996dc9f17801ee40bc4ffa41af31d8a3e
+
+
 ## TITA Links
 - Community: https://join.slack.com/shareDM/zt-1v6lgwcz8-P_54cF0RJjfr0a1yVVzScQFigma
 - Twitter: https://twitter.com/titaglobal?s=21&t=OzwvTeMmjbSZx8GSMKMZ8wFigma
