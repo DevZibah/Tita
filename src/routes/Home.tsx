@@ -116,7 +116,7 @@ const Home = () => {
           <h4 className='small-text'>Grow With TITA</h4>
         </main>
         <div className='mt-4 mt-md-5'>
-          <button className='buttn build-buttn'>Build With TITA</button>
+          <button className='buttn build-buttn'>Grow With TITA</button>
         </div>
       </article>
     </section>
