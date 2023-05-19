@@ -11,7 +11,7 @@ export const faqsData: Array<{ id: string; answer: string; question: string }> =
       question:
         "How is my loan application evaluated, and what factors are considered in the decision-making process?",
       answer:
-        "Factors such as credit history, income, and collateral are considered. We also use machine learning algorithms to analyze borrower data and assess creditworthiness.",
+        "Factors such as credit history and income are considered. We also use machine learning algorithms to analyze borrower data and assess credit worthiness.",
     },
     {
       id: "3",
@@ -42,13 +42,13 @@ export const faqsData: Array<{ id: string; answer: string; question: string }> =
       id: "7",
       question: "How long does it take to receive a loan through TITA?",
       answer:
-        "he time it takes to receive a loan through TITA varies depending on the borrower's creditworthiness. Some loans may be approved and funded within hours, while others may take several days or more.",
+        "The time it takes to receive a loan through TITA varies depending on the borrower's creditworthiness. Some loans may be approved and funded within hours, while others may take several days or more.",
     },
     {
       id: "8",
       question: "How is risk mitigated on the platform?",
       answer:
-        "TITA typically uses a variety of risk mitigation strategies, such as credit scoring, collateral requirements, and diversification of lenders' portfolios.",
+        "TITA typically uses a variety of risk mitigation strategies, such as credit scoring, and diversification of lenders' portfolios.",
     },
     {
       id: "9",
