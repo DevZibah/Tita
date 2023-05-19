@@ -33,11 +33,11 @@ TITA which is coined from the following words; T[Transparent], I[Inclusive], T[T
 
 ## TITA Tools/Technology
 
-- CELO :- TITA Platform is built on CELE Blockchain Technology. CELO is an open-source blockchain platform that aims to create a decentralised financial ecosystem that is accessible to everyone. It is designed to enable fast, secure and low-cost transactions for mobile devices built on Eteherum code base. One of the key features of CELO is mobile payments using the mobile app by name Celo Wallet.
+- CELO :- TITA Platform is built on CELO Blockchain Technology. CELO is an open-source blockchain platform that aims to create a decentralised financial ecosystem that is accessible to everyone. It is designed to enable fast, secure and low-cost transactions for mobile devices built on Eteherum code base. One of the key features of CELO is mobile payments using the mobile app by name Celo Wallet.
 - React.JS :-React is a free and open-source front-end JavaScript library for building user interfaces based on components. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.JS.
 - BootStrap:-Bootstrap is a free and open source front-end development framework used to create websites and web applications. This technology was used to style components and create a responsive website.
 - Cascading Style Sheet (CSS):-CSS is a language used to style web pages. The components were styled using this technology.
-- Figma:-Figma is an online user interface (UI) tool for designing, collaborating, and prototyping.
+- Figma:-Figma is an online user interface (UI) tool for designing, collaborating and prototyping.
 
 ## TITA Technical Immplementation
 
