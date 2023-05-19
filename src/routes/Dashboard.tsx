@@ -1,10 +1,40 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../style/Dashboard.css'
 import safelock from '../assets/safelock.png'
 import Modal from '../components/Modal'
+import Web3 from 'web3';
+import Wagmi from 'wagmi';
+
+import { useContractRead } from "wagmi";
+import {ABI} from '../../abi';
+import { AbiItem } from 'web3-utils'
 
 const Dashboard = () => {
   const [open, setOpen] = useState(false)
+  const [setData]= useState('')
+  const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+  const contract = new web3.eth.Contract(ABI as AbiItem[], '0xB4f21c2996dc9f17801eE40BC4FFa41aF31D8A3E');
+  
+  const [contractValue, setContractValue] = useState('');
+  useEffect(() => {
+    const loadContractValue = async () => {
+      try {
+        const value = await contract.methods.proposalCount().call();
+        const accounts = await web3.eth.getAccounts();
+        console.log(accounts)
+        let account = accounts[0]
+        // Get Total Deposits by customer
+        let getSupplyBalance = await contract.methods.getDepositsByAddress(account).call();
+
+        console.log(getSupplyBalance)
+        setContractValue(value);
+      } catch (error) {
+        console.error('Error retrieving value from contract:', error);
+      }
+    };
+
+    loadContractValue();
+  }, []);
   return (
     <section className='p-4 mt-2 sec-market'>
       <header>
@@ -18,7 +48,7 @@ const Dashboard = () => {
         <section className='mt-3'>
           <article className='d-flex'>
             <p className='mar-pp'>Net APY:</p>
-            <p className='fs-5 mart-pp ms-2 dash-numb'>0.00%</p>
+            <p className='fs-5 mart-pp ms-2 dash-numb'>0.00% {contractValue}</p>
           </article>
           <section>
             <article className='d-flex'>

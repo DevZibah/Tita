@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../style/Market.css'
 import bnb from '../assets/bnb.png'
 import usdt from '../assets/usdt.png'
@@ -7,8 +7,65 @@ import celo from '../assets/celo.png'
 import { HiOutlineCubeTransparent } from 'react-icons/hi'
 import { MdOutlineAllInclusive } from 'react-icons/md'
 import { MdOutlineToken } from 'react-icons/md'
+import Web3 from 'web3';
+import Wagmi from 'wagmi';
 
+import { useContractRead } from "wagmi";
+import {ABI} from '../../abi';
+import { AbiItem } from 'web3-utils'
 const Market = () => {
+  const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+  const contract = new web3.eth.Contract(ABI as AbiItem[], '0xB4f21c2996dc9f17801eE40BC4FFa41aF31D8A3E');
+  
+  const [contractValues, setContractValues] = useState({
+    proposalCount:"",
+    poolBalance:0,
+    totalSupply:0,
+    totalBorrow:0
+  });
+  // let amountToInvest = prompt("How much do you want to Invest? press cancel if you're not interested")
+  // console.log(amountToInvest)
+
+  const addFundsToPool = async () => {
+    try {
+      await contract.methods.getProposalCount().call();
+    } catch (error) {
+      console.error('Error retrieving value from contract:', error);
+    }
+  };
+  useEffect(() => {
+    const loadContractValue = async () => {
+      try {
+        const proposalCount = await contract.methods.proposalCount().call();
+        const poolBalance = parseFloat(web3.utils.fromWei(await contract.methods.getContractBalance().call(),'ether'));
+        let totalSupply = await contract.methods.getAllDeposits().call();
+        let getProposals = await contract.methods.getAllProposals().call();
+        let supply:number=0
+        let proposals=0;
+
+        // Get proposals
+        for(let i=0;i<totalSupply.length;i++){
+          supply +=parseFloat(web3.utils.fromWei(totalSupply[i].amount,'ether'));
+        }
+        // Get Proposals
+        for(let i=0;i<getProposals.length;i++){
+          proposals +=parseInt(getProposals[i].amount);
+        }
+        console.log(supply)
+        setContractValues({
+          proposalCount,
+          poolBalance,
+          totalSupply:supply,
+          totalBorrow:proposals
+
+        });
+      } catch (error) {
+        console.error('Error retrieving value from contract:', error);
+      }
+    };
+
+    loadContractValue();
+  }, []);
   return (
     <section className='p-4 mt-2 sec-market'>
       <header>
@@ -20,21 +77,21 @@ const Market = () => {
           <article className='grid-mark'>
             <div className='divv-mar p-3'>
               <p className='market-textt'>Total Supply</p>
-              <p className='market-p'>0.00</p>
+              <p className='market-p'>{contractValues.totalSupply}</p>
             </div>
             <div className='divv-mar p-3'>
               <p className='market-textt'>Total Borrow</p>
-              <p className='market-p'>0.00</p>
+              <p className='market-p'>{contractValues.totalBorrow}</p>
             </div>
           </article>
           <article className='grid-mark mt-4'>
             <div className='divv-mar p-3'>
               <p className='market-textt'>Available Liquidity</p>
-              <p className='market-p'>0.00</p>
+              <p className='market-p'>{contractValues.poolBalance}</p>
             </div>
             <div className='divv-mar p-3'>
               <p className='market-textt'>Total Treasure</p>
-              <p className='market-p'>0.00</p>
+              <p className='market-p'>{contractValues.poolBalance}</p>
             </div>
           </article>
         </section>
@@ -82,7 +139,7 @@ const Market = () => {
               <section className='d-flex bloc-sec'>
                 <div>
                   <p className='mar-pp'>Total Supply</p>
-                  <p className='fs-5 mart-pp'>0.00</p>
+                  <p className='fs-5 mart-pp'>{contractValues.poolBalance}</p>
                 </div>
                 <div>
                   <p className='mar-pp'>Supply APY</p>
@@ -90,18 +147,18 @@ const Market = () => {
                 </div>
                 <div>
                   <p className='mar-pp'>Liquidity</p>
-                  <p className='fs-5 mart-pp'>0.00</p>
+                  <p className='fs-5 mart-pp'>{contractValues.poolBalance}</p>
                 </div>
               </section>
               <hr className='hor-mar' />
               <section className='d-flex bloc-sec'>
                 <div>
                   <p className='mar-pp'>Total Borrow</p>
-                  <p className='fs-5 mart-pp'>0.00</p>
+                  <p className='fs-5 mart-pp'>{contractValues.totalBorrow}</p>
                 </div>
                 <div>
                   <p className='mar-pp'>Borrow APY</p>
-                  <p className='fs-5 mart-pp'>0.00</p>
+                  <p className='fs-5 mart-pp'>5</p>
                 </div>
                 <div>
                   <p className='mar-pp'>Collateral F</p>
