@@ -110,10 +110,10 @@ const Home = () => {
         <main className='mt-4 p-3'>
           <img src={Background} alt='background-image' className='back-image' />
           <h4 className='textt-three p-2'>
-            TITA Token is a stable coin built on the Celo Blockchain that makes
+            TIA Token is a stable coin built on the Celo Blockchain that makes
             interacting with TITA perfect for high volume transactions.
           </h4>
-          <h4 className='small-text'>Build with TITA </h4>
+          <h4 className='small-text'>Grow With TITA</h4>
         </main>
         <div className='mt-4 mt-md-5'>
           <button className='buttn build-buttn'>Build With TITA</button>
